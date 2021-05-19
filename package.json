@@ -1,0 +1,24 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "My first project in hexlet",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgy-p/frontend-project-lvl1.git"
+  },
+  "author": "Georgy Pigar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgy-p/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/georgy-p/frontend-project-lvl1#readme"
+}
