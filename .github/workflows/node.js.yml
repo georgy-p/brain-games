@@ -17,5 +17,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Auto Eslint check
-      - run: npm ci
+      - run: make install
       - run: make lint
