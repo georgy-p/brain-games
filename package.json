@@ -7,7 +7,6 @@
   "bin": {
     "brain-games": "bin/brain-games.js"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/georgy-p/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/georgy-p/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/georgy-p/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^26.6.3",
+    "prettier": "^2.3.0"
+  }
 }
