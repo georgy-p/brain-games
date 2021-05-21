@@ -13,8 +13,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v2
       - name: Auto Eslint check
-      - run: make install
+      - run: npm ci
       - run: make lint
