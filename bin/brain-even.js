@@ -28,7 +28,7 @@ const brainEvenGame = () => {
       console.log(question);
       const userAnswer = readlineSync.question('Your answer: ');
       if (userAnswer !== rightResult) {
-        return console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. \n Let's try again, ${userName}`);
+        return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightResult}'. \n Let's try again, ${userName}`);
       }
       console.log('Correct!');
     }
