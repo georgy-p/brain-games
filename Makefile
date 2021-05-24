@@ -8,3 +8,5 @@ lint:
 	npx eslint .
 cli:
 	node src/cli.js
+brain-even:
+	node bin/brain-even.js;
