@@ -20,7 +20,7 @@ export const gamePlay = (gameRules, game) => {
     console.log(question);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== rightResult) {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightResult}'. \nLet's try again, ${userName}`);
+      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightResult}'. \nLet's try again, ${userName}!`);
     }
     console.log('Correct!');
   }
