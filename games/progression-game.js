@@ -31,8 +31,6 @@ const getProgression = (startNum, stepNum) => {
   return arr;
 };
 
-// getProgression(5, 2);
-
 const progressionGame = () => {
   const pair = [];
   const num = getRandomInt(1, 10);
