@@ -2,6 +2,6 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
 
-import { brainProgressionGame } from '../games/progression-game.js';
+import { brainProgressionGame } from '../src/games/progression-game.js';
 
 brainProgressionGame();

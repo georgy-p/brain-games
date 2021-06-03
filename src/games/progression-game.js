@@ -1,6 +1,6 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import { gamePlay, getRandomInt } from '../index.js';
+import { gamePlay, getRandomInt } from '../../index.js';
 
 const rules = 'What number is missing in the progression?';
 
@@ -22,25 +22,25 @@ const numHider = (arr) => {
 
 const getProgression = (startNum, stepNum) => {
   let num = startNum;
-  const arr = [];
-  arr.push(startNum);
+  const progression = [];
+  progression.push(startNum);
   for (let i = 0; i < 9; i += 1) {
     num += stepNum;
-    arr.push(num);
+    progression.push(num);
   }
-  return arr;
+  return progression;
 };
 
 const progressionGame = () => {
-  const pair = [];
+  const gameData = [];
   const num = getRandomInt(1, 10);
   const step = getRandomInt(1, 10);
   const progression = getProgression(num, step);
   const hideProgression = numHider(progression);
   const question = hideProgression.pop().join(' ');
   const rightResult = hideProgression.pop().toString();
-  pair.push(question, rightResult);
-  return pair;
+  gameData.push(question, rightResult);
+  return gameData;
 };
 
 export const brainProgressionGame = () => {

@@ -1,6 +1,6 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import { gamePlay, getRandomInt } from '../index.js';
+import { gamePlay, getRandomInt } from '../../index.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -9,14 +9,14 @@ const isEven = (num) => {
   return result;
 };
 
-const gameNum = () => {
-  const pair = [];
+const evenNumGame = () => {
+  const gameData = [];
   const question = getRandomInt(1, 20);
   const rightResult = isEven(question);
-  pair.push(question, rightResult);
-  return pair;
+  gameData.push(question, rightResult);
+  return gameData;
 };
 
 export const brainEvenGame = () => {
-  gamePlay(rules, gameNum);
+  gamePlay(rules, evenNumGame);
 };

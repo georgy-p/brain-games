@@ -1,6 +1,6 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import { gamePlay, getRandomInt } from '../index.js';
+import { gamePlay, getRandomInt } from '../../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

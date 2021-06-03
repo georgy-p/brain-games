@@ -7,15 +7,13 @@ export const getRandomInt = (min, max) => {
   return Math.round(result);
 };
 
-export const gamePlay = (gameRules, game) => {
+export const gamePlay = (gameRules, gameData) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(gameRules);
   for (let i = 0; i < 3; i += 1) {
-    const gameResults = game();
-    const rightResult = gameResults.pop();
-    const gameQuestion = gameResults.pop();
+    const [gameQuestion, rightResult] = gameData();
     const question = `Question: ${gameQuestion}`;
     console.log(question);
     const userAnswer = readlineSync.question('Your answer: ');

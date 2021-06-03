@@ -1,6 +1,6 @@
 /* eslint-disable no-alert, no-console */
 /* eslint-disable import/prefer-default-export */
-import { gamePlay, getRandomInt } from '../index.js';
+import { gamePlay, getRandomInt } from '../../index.js';
 
 const rules = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -24,16 +24,16 @@ const calculator = (arr) => {
 };
 
 const calcGame = () => {
-  const pair = [];
-  const arr = [];
+  const gameData = [];
+  const mathExpression = [];
   const firstOperand = getRandomInt(1, 10);
   const secondOperand = getRandomInt(1, 10);
   const operator = operators[getRandomInt(0, 2)];
-  arr.push(firstOperand, operator, secondOperand);
-  const question = arr.join(' ');
-  const rightResult = calculator(arr).toString();
-  pair.push(question, rightResult);
-  return pair;
+  mathExpression.push(firstOperand, operator, secondOperand);
+  const question = mathExpression.join(' ');
+  const rightResult = calculator(mathExpression).toString();
+  gameData.push(question, rightResult);
+  return gameData;
 };
 
 export const brainCalcGame = () => {
